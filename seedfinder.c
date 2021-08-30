@@ -72,8 +72,7 @@ int main(int argc, char** argv) {
         }
 
         if (success == 0) continue;
-        printf("Structure found: %lu\n", structureSeed);
-
+        //printf("Structure found: %lu\n", structureSeed);
 
         for (uint64_t biomeSeed = 0; biomeSeed < 65536; biomeSeed++) {
             uint64_t seed = structureSeed | (biomeSeed << 48);
